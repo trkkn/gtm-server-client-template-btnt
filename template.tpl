@@ -19,11 +19,10 @@ ___INFO___
 
 ___NOTES___
 
-Created on 26/11/2025, 11:29:20
+Created on 27/11/2025, 11:29:20
 
 ___SANDBOXED_JS_FOR_SERVER___
 
-/// <reference path="../server-gtm-sandboxed-apis.d.ts" />
 // TODO: make list of search engine referrers configurable
 
 const claimRequest = require("claimRequest");

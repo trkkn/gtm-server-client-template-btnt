@@ -1,0 +1,92 @@
+[
+    {
+        "name": "event_name",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "event_value",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "page_location",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "page_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "page_referrer",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "new_user",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "new_session",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "traffic_source",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "traffic_medium",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "custom_parameters",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "custom_metrics",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "client_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "event_timestamp",
+        "type": "INT64",
+        "mode": "REQUIRED",
+        "description": "current time in milliseconds since Unix epoch. You can parse it with the function TIMESTAMP_MILLIS(timestamp)"
+    }
+]
